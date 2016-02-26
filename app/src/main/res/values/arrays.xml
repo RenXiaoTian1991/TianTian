@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="random_imgs">
+        <item>@mipmap/fg1</item>
+        <item>@mipmap/fg2</item>
+        <item>@mipmap/fg3</item>
+        <item>@mipmap/fg4</item>
+        <item>@mipmap/fg5</item>
+        <item>@mipmap/fg6</item>
+        <item>@mipmap/fg7</item>
+        <item>@mipmap/fg8</item>
+        <item>@mipmap/fg9</item>
+    </array>
+    <integer-array name="randomness">
+        <item>1</item>
+        <item>5</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+</resources>

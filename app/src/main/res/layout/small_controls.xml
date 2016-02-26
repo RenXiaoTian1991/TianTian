@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/small_controls_head"
+        layout="@layout/small_controls_head"
+        android:layout_gravity="top"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/small_controls_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vod_small_bottom_height"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/live_play_control_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/small_Play_bt"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/live_play_control_play_selector" />
+
+        <SeekBar
+            android:id="@+id/small_seekbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:max="100"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:progressDrawable="@drawable/live_progress_horizontal"
+            android:thumb="@drawable/transport" />
+
+        <ImageButton
+            android:id="@+id/small_full"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/live_play_control_max_selector" />
+
+        <ImageButton
+            android:id="@+id/small_yinliang"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/live_play_control_voice_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llsmall_yinliang"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="40dip"
+        android:background="@drawable/small_voice_bg"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:visibility="gone">
+
+        <cy.studiodemo.view.VerticalSeekBar
+            android:id="@+id/small_yinliang_seekbar"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:max="100"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:paddingBottom="3dip"
+            android:paddingTop="1dip"
+            android:progressDrawable="@drawable/voice_progress"
+            android:thumb="@drawable/voice_point" />
+    </LinearLayout>
+
+</FrameLayout>
